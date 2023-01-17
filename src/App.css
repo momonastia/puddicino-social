@@ -2,4 +2,28 @@
 
 .App {
   font-family: "Questrial", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+  .App {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .MessageList {
+    max-width: 800px;
+  }
+
+  .friend-list {
+    max-width: 250px;
+  }
 }

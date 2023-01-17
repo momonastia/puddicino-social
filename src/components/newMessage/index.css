@@ -1,0 +1,26 @@
+.NewMessage {
+  margin: 24px 0;
+  width: 400px;
+}
+
+.NewMessage form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.NewMessage form input {
+  padding: 4px 2px 4px 12px;
+  height: 30px;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  font-family: "Questrial", sans-serif;
+}
+
+.btn-send:hover {
+  cursor: pointer;
+  background-color: rgba(255, 162, 0, 1);
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}

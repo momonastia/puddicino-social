@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import GET from "../../utils/http";
+import { GET } from "../../utils/http";
 import "./index.css";
 
 const Message = ({ data }) => {
@@ -16,7 +16,7 @@ const Message = ({ data }) => {
           <h4>{data.title}</h4>
           <p>{data.body}</p>
         </div>
-        <div className="message_header">
+        <div className="message_user_info">
           <img src={user.image} alt={user.firstName} />
           <p>@{user.firstName}</p>
         </div>
