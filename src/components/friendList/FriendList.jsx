@@ -14,11 +14,15 @@ const FriendList = () => {
 
   return (
     <div className="friend-list">
-      <h3>Your friends online</h3>
-      {friendsList.map((friend) => (
-        <Friend data={friend} key={friend.id} />
-      ))}
-      <Friend data={{ image: "", firstName: "", lastName: "" }} />
+      <div className="friend-list-header">
+        <h3>Your friends online</h3>
+      </div>
+      <div className="friend-list-content">
+        {friendsList.map((friend) => (
+          <Friend data={friend} key={friend.id} />
+        ))}
+        <Friend data={{ image: "", firstName: "", lastName: "" }} />
+      </div>
     </div>
   );
 };

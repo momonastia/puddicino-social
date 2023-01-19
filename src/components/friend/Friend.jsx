@@ -11,7 +11,7 @@ const Friend = ({ data }) => {
         <p>{firstName}</p>
       </div>
       <div className="status">
-        <p>🟢</p>
+        <div className="sphere green"></div>
       </div>
     </div>
   );

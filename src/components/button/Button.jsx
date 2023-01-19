@@ -1,9 +1,12 @@
 import "./index.css";
 
-const Button = ({ onHandleModal }) => {
+const Button = ({ onHandleModal, isModalEnabled }) => {
   return (
     <div>
-      <button onClick={onHandleModal} className="Button">
+      <button
+        onClick={onHandleModal}
+        className={`Button ${isModalEnabled ? "active" : "passive"}  `}
+      >
         +
       </button>
     </div>

@@ -18,3 +18,8 @@
   transition: all 0.4s;
   background-color: rgb(153, 1, 36);
 }
+
+.Button.active {
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}

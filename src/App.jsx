@@ -13,7 +13,7 @@ function App() {
 
   const [isModalEnabled, setModalEnabled] = useState(false);
 
-  const onHandleModal = () => setModalEnabled(true);
+  const onHandleModal = () => setModalEnabled((prev) => !prev);
 
   return (
     <div className="App">
@@ -21,14 +21,14 @@ function App() {
       <div className="mainSection">
         {/* Condizione per renderizzare Modal solo se lo stato isModalEnabled è impostato a true */}
         {isModalEnabled && (
-          <Modal>
-            <NewMessage />
+          <Modal setModalEnabled={setModalEnabled}>
+            <NewMessage setModalEnabled={setModalEnabled} />
           </Modal>
         )}
         <Filter setFilterState={setFilterState} />
         <MessageList filterSearch={filterState} />{" "}
         {/* creazione del prop per filtrare i risultati */}
-        <Button onHandleModal={onHandleModal} />
+        <Button onHandleModal={onHandleModal} isModalEnabled={isModalEnabled} />
       </div>
     </div>
   );

@@ -1,7 +1,11 @@
-/* .Modal {
-  position: fixed;
+.Modal {
+  transition: all 2s;
 }
- */
+
+.modal-on {
+  opacity: 0;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -10,14 +14,18 @@
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
-  margin-top: 40px;
+  width: 400px;
   padding: 20px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
   border-radius: 6px;
   background-color: white;
-  z-index: 2;
+  z-index: 4;
   position: relative;
+  background-color: rgb(253, 74, 64);
 }
