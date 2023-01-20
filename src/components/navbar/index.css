@@ -1,0 +1,32 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  font-family: "Outfit", sans-serif;
+  color: whitesmoke;
+}
+
+.NavBar ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.NavBar a {
+  display: flex;
+  text-decoration: none;
+  font-weight: bold;
+  color: whitesmoke;
+  gap: 3px;
+}
+
+.NavBar ul img {
+  height: 20px;
+}
+
+.NavBar a:hover {
+  color: rgba(101, 0, 24, 1);
+  font-weight: bolder;
+}

@@ -12,6 +12,7 @@ body {
     rgba(255, 162, 0, 1) 100%
   );
   color: white;
+  height: 100vh;
 }
 
 code {

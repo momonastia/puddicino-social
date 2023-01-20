@@ -1,6 +1,6 @@
 .NewMessage {
   margin: 24px 0;
-  width: 400px;
+  width: 100%;
 }
 
 .NewMessage form {
@@ -16,6 +16,7 @@
   border: 0;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
   font-family: "Outfit", sans-serif;
+  font-weight: bold;
 }
 
 .btn-send:hover {

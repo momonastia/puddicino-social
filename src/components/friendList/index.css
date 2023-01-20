@@ -2,13 +2,19 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  align-items: center;
 }
 
 .friend-list-content {
+  display: flex;
+  flex-direction: row;
   border-right: none;
   padding: 0.5% 3%;
-  height: 100vh;
+  align-self: flex-start;
   overflow-y: scroll;
+  width: 100vw;
+  overflow-x: scroll;
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -16,5 +22,17 @@
 }
 
 .friend-list-header {
-  margin-left: 6%;
+  margin-left: 8%;
+}
+
+@media (min-width: 800px) {
+  .friend-list {
+    align-items: flex-start;
+  }
+
+  .friend-list-content {
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
 }

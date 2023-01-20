@@ -20,7 +20,7 @@
 }
 
 .content {
-  width: 400px;
+  width: 80%;
   padding: 20px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
   border-radius: 6px;
@@ -28,4 +28,10 @@
   z-index: 4;
   position: relative;
   background-color: rgb(253, 74, 64);
+}
+
+@media (min-width: 800px) {
+  .content {
+    max-width: 400px;
+  }
 }

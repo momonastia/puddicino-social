@@ -6,6 +6,7 @@ import FriendList from "./components/friendList";
 import Filter from "./components/filter";
 import Button from "./components/button";
 import Modal from "./components/modal";
+import MainLayout from "./layouts/MainLayout";
 
 function App() {
   const [filterState, setFilterState] =
@@ -17,19 +18,28 @@ function App() {
 
   return (
     <div className="App">
-      <FriendList />
-      <div className="mainSection">
-        {/* Condizione per renderizzare Modal solo se lo stato isModalEnabled è impostato a true */}
-        {isModalEnabled && (
-          <Modal setModalEnabled={setModalEnabled}>
-            <NewMessage setModalEnabled={setModalEnabled} />
-          </Modal>
-        )}
-        <Filter setFilterState={setFilterState} />
-        <MessageList filterSearch={filterState} />{" "}
-        {/* creazione del prop per filtrare i risultati */}
-        <Button onHandleModal={onHandleModal} isModalEnabled={isModalEnabled} />
-      </div>
+      {/* TODO: Header */}
+      <MainLayout>
+        <div className="main-content">
+          <FriendList />
+          <div className="mainSection">
+            {/* Condizione per renderizzare Modal solo se lo stato isModalEnabled è impostato a true */}
+            {isModalEnabled && (
+              <Modal setModalEnabled={setModalEnabled}>
+                <NewMessage setModalEnabled={setModalEnabled} />
+              </Modal>
+            )}
+            <Filter setFilterState={setFilterState} />
+            <MessageList filterSearch={filterState} />{" "}
+            {/* creazione del prop per filtrare i risultati */}
+            <Button
+              onHandleModal={onHandleModal}
+              isModalEnabled={isModalEnabled}
+            />
+            {/* TODO: Footer */}
+          </div>
+        </div>
+      </MainLayout>
     </div>
   );
 }
