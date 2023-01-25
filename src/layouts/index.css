@@ -1,8 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap");
 
 .MainLayout {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 88vh;
   box-sizing: border-box;
+  /*   justify-content: center; */
+  /*   align-items: center; */
+}
+
+.mainLayoutBody {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /*   justify-content: center; */
+  /*  align-items: center; */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  flex: 0 0 auto;
 }
 
 @media (min-width: 800px) {

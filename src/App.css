@@ -4,15 +4,17 @@
   font-family: "Outfit", sans-serif;
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 90vh;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .mainSection {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 @media (min-width: 800px) {

@@ -1,11 +1,26 @@
+import { useState, useEffect } from "react";
 import Logo from "../logo";
 import "./index.css";
 
 const NavBar = () => {
+  const [username, setUsername] = useState();
+
+  useEffect(() => {
+    setUsername(JSON.parse(localStorage.getItem("username"))?.username);
+  }, []);
+
+  const onlogOut = () => {
+    localStorage.removeItem("username");
+    window.location.reload();
+  };
+
   return (
     <div className="NavBar">
       <Logo />
       <ul>
+        <li onClick={onlogOut} className="username">
+          {username ? username : "Logged out"}{" "}
+        </li>
         <li>
           <a href="#">
             <img

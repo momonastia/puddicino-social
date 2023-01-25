@@ -4,12 +4,14 @@ import "./index.css";
 const MainLayout = ({ children }) => {
   return (
     <div className="MainLayout">
-      <NavBar />
-      {children}
-      <div>
+      <div className="mainLayoutBody">
+        <NavBar />
+        {children}
+      </div>
+      <footer>
         Terms of Service Privacy Policy Cookie Policy Accessibility © 2023
         Puddicino, Inc.
-      </div>
+      </footer>
     </div>
   );
 };
