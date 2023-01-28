@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { GET } from "../../utils/http";
 import "./index.css";
 import Message from "../message";
+import React from "react";
 
 const MessageList = ({ filterSearch }) => {
   const [messageList, setMessageList] = useState([]);
@@ -16,9 +17,11 @@ const MessageList = ({ filterSearch }) => {
 
   return (
     <div className="MessageList">
-      {messageList.map((msg) => (
-        <Message data={msg} key={msg.id} />
-      ))}
+      <div>
+        {messageList.map((msg) => (
+          <Message data={msg} key={msg.id} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -5,8 +5,21 @@ import "./index.css";
 const LogIn = () => {
   const [loginState, setLoginState] = useState({});
 
-  const onFormSubmit = () =>
-    localStorage.setItem("username", JSON.stringify(loginState));
+  const onFormSubmit = () => {
+    if (users) {
+      users.map((user) => {
+        if (
+          user.username === loginState.username &&
+          user.password === loginState.password
+        ) {
+          localStorage.setItem(
+            "username",
+            JSON.stringify({ ...loginState, imgProfile: user.imgProfile })
+          );
+        }
+      });
+    }
+  };
 
   return (
     <div className="LogIn">

@@ -14,10 +14,10 @@ const users = [
   },
   {
     id: 3,
-    username: "RickSanchez",
-    password: "Mortyyy999",
+    username: "Joe Black",
+    password: "White",
     imgProfile:
-      "https://cdn.webshopapp.com/shops/103628/files/348654620/rick-sanchez-rick-and-morty-head.jpg",
+      "https://programma.sorrisi.com/guidatv/uploads/epg/images/program/5/8/4/485/originale/93680.jpg",
   },
 ];
 

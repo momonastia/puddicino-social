@@ -45,7 +45,6 @@ function App() {
                 onHandleModal={onHandleModal}
                 isModalEnabled={isModalEnabled}
               />
-              {/* TODO: Footer */}
             </div>
           </div>
         ) : (

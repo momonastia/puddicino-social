@@ -1,4 +1,7 @@
 .Filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px 5px;
 }
 
@@ -11,4 +14,10 @@
   font-family: "Outfit", sans-serif;
   color: black;
   font-weight: bold;
+}
+
+@media (min-width: 800px) {
+  .Filter {
+    justify-content: flex-start;
+  }
 }
