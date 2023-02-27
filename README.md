@@ -8,7 +8,7 @@
 
 <div>
   <h3 align="left">Descrption</h3>
-    <p  align="left"> Simple social network application that permit to a user to log in/log out, see a friend list, posts list and new post creation</p>
+    <p  align="left"> Simple social network application that permits to a user to log in/log out, see a friend list, posts list. The user can also create a new post by clicking "+" button  </p>
    <br>
     <p><b>Credentials Login</b></p>
     <ul>
