@@ -20,11 +20,12 @@ password: White
 <hr>
 
 <div>
-    <h3 align="left">Home in mobile and desctop versions</h3>
+    <h3 align="left">Home in mobile, tablet and desctop versions</h3>
   <div style="display: flex; gap: 10px;  flex-direction: row;
         align-items: center; justify-content: center;">
-<img src='https://i.postimg.cc/8PJvTfzs/pudducinomobile.jpg'  style="height: 300px; padding: 20px 0;" />
-  <img src='https://i.postimg.cc/ZKCQZHN3/mobile-1.png'  style="height: 300px; padding: 20px 0;" />
+      <img src='https://i.postimg.cc/0yrKV6L9/mobile-2.png'  style="height: 300px; padding: 20px 0;" />
+      <img src='https://i.postimg.cc/j2Jk6dtc/mobile-3.png'  style="height: 300px; padding: 20px 0;" />
+      <img src='https://i.postimg.cc/ZKCQZHN3/mobile-1.png'  style="height: 300px; padding: 20px 0;" />
 </div>
 </div>      
       
