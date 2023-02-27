@@ -19,7 +19,7 @@
 
 <div>
     <h3 align="left">Home in mobile, tablet and desctop versions</h3>
-  <div style="display: flex; gap: 10px;  flex-direction: row;
+  <div style="display: flex; gap: 20px;  flex-direction: row;
         align-items: center; justify-content: center;">
       <img src='https://i.postimg.cc/0yrKV6L9/mobile-2.png'  style="height: 300px; padding: 20px; margin: 20px;" />
       <img src='https://i.postimg.cc/j2Jk6dtc/mobile-3.png'  style="height: 300px; padding: 20px; margin: 20px;" />
