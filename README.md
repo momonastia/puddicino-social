@@ -7,8 +7,8 @@
 </div> 
 
 <div>
-  <h3 align="left">Descrptione</h3>
-    <p  align="left"> Simple social network </p>
+  <h3 align="left">Descrption</h3>
+    <p  align="left"> Simple social network application that permit to a user to log in/log out, see a friend list, posts list and new post creation</p>
    <br>
     <p><b>Credentials Login</b></p>
     <ul>
@@ -27,4 +27,16 @@
 </div>
 </div>      
       
+<hr>
+      
+<div style="display: flex; flex-direction: column;  align-items: center;">
+<h3>Tech stack</span> :</h3>
+<ul style="display: flex; flex-direction: row; gap:20px; align-items: center; justify-content: flex-start;">
+<img  style='width: 40px;' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="">
+<img  style='width: 40px;' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="">
+<img  style='width: 40px;' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="">
+<img  style='width: 40px;' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="">
+<img  style='width: 40px;' src="https://avatars.githubusercontent.com/u/6078720?s=200&v=4" alt="">
+</ul>
+</div>
 <hr>
