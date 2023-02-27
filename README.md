@@ -21,8 +21,7 @@
     <h3 align="left">Mobile, tablet and desktop versions</h3>
   <div style="display: flex; gap: 5rem;  flex-direction: row;
         align-items: center; justify-content: center;">
-        <div style="display: flex; gap: 5rem;  flex-direction: row;
-        align-items: center; justify-content: center;">
+        <div>
     <img src='https://i.postimg.cc/0yrKV6L9/mobile-2.png'  style="height: 300px; padding: 20px; margin: 20px;" /> 
     <img src='https://i.postimg.cc/j2Jk6dtc/mobile-3.png'  style="height: 300px; padding: 20px; margin: 20px;" /> 
     </div> 
